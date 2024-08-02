@@ -13,6 +13,12 @@ jobs:
 
   teste:
     runs-on: ubuntu-latest
+    env:
+      HOST: localhost
+      USER: root
+      PASSWORD: root
+      DBNAME: root
+      PORT: 5432
     strategy:
       matrix:
         go_version: ['1.18', '1.17', '>=1.18']
